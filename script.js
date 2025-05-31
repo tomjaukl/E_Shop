@@ -1,0 +1,44 @@
+function pridejDoKosiku(polozkaKey) {
+    fetch('slovnik.json')
+        .then(response => response.json()) // převede odpověď na objekt
+        .then(kosik => {
+            const produkt = kosik[polozkaKey];
+            let cart = JSON.parse(localStorage.getItem('kosik')) || [];
+            cart.push({ nazev: produkt.nazev, cena: produkt.cena });
+            localStorage.setItem('kosik', JSON.stringify(cart));
+            notification(produkt.nazev + ' byl přidán do košíku');
+        })
+        .catch(() => alert("Chyba při načítání slovníku!"));
+}
+function notification(message) {
+    const notificationDiv = document.createElement('div');
+    const notificationText = document.createElement('h2');
+    notificationText.textContent = message;
+    notificationDiv.className = 'notification';
+    notificationDiv.appendChild(notificationText);
+    document.body.appendChild(notificationDiv);
+    setTimeout(() => {
+        notificationDiv.remove();
+    }, 2000);
+}
+function zobrazKosik() {
+    const itemsDiv = document.getElementById('yourItems');
+    let cart = JSON.parse(localStorage.getItem('kosik')) || [];
+    if (cart.length === 0) {
+        itemsDiv.innerHTML = "<p>Košík je prázdný.</p>";
+        return;
+    }
+    cart.forEach(item => {
+        const vec = document.createElement('div');
+        vec.className = 'item';
+        itemsDiv.appendChild(vec);
+        const nazev = document.createElement('h3');
+        nazev.textContent = item.nazev;
+        vec.appendChild(nazev);
+        const cena = document.createElement('p');
+        cena.textContent = "Cena: " + item.cena + " Kč";
+        vec.appendChild(cena);
+        
+    });
+    itemsDiv.innerHTML = html;
+}

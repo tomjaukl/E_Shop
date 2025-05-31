@@ -1,0 +1,82 @@
+{
+    "polozka1": {
+        "nazev": "Windows 95 Nostalgia Edition",
+        "cena": 9.95
+    },
+    "polozka2": {
+        "nazev": "Windows XP Hacker Deluxe",
+        "cena": 14.99
+    },
+    "polozka3": {
+        "nazev": "Windows 7 Grandma’s Favorite",
+        "cena": 19.00
+    },
+    "polozka4": {
+        "nazev": "Windows 8 Why Edition",
+        "cena": 1.99
+    },
+    "polozka5": {
+        "nazev": "Windows 10 Forever Trial",
+        "cena": 0.00
+    },
+    "polozka6": {
+        "nazev": "Windows 11 RGB Gamer Pro",
+        "cena": 129.99
+    },
+    "polozka7": {
+        "nazev": "Windows 12 Pre-Alpha Rumors",
+        "cena": 69.69
+    },
+    "polozka8": {
+        "nazev": "Windows Millennium Bugged Edition",
+        "cena": 6.66
+    },
+    "polozka9": {
+        "nazev": "Windows Home Basic Sadness Pack",
+        "cena": 4.20
+    },
+    "polozka10": {
+        "nazev": "Windows Corporate Espionage Suite",
+        "cena": 299.99
+    },
+    "polozka11": {
+        "nazev": "Windows Vista Regret Edition",
+        "cena": 3.33
+    },
+    "polozka12": {
+        "nazev": "Windows 10 Ultra Mega Home Pro",
+        "cena": 109.99
+    },
+    "polozka13": {
+        "nazev": "Windows XP Pirate Bay Exclusive",
+        "cena": 0.01
+    },
+    "polozka14": {
+        "nazev": "Windows Server for Gamers",
+        "cena": 199.00
+    },
+    "polozka15": {
+        "nazev": "Windows 11 TikTok Edition",
+        "cena": 89.99
+    },
+    "polozka16": {
+        "nazev": "Windows 3.1 Collector's Pain",
+        "cena": 1.31
+    },
+    "polozka17": {
+        "nazev": "Windows 10 I Swear It's Legal",
+        "cena": 15.00
+    },
+    "polozka18": {
+        "nazev": "Windows 9 (Oops, Skipped)",
+        "cena": 9.00
+    },
+    "polozka19": {
+        "nazev": "Windows 11 Clippy Returns",
+        "cena": 49.49
+    },
+    "polozka20": {
+        "nazev": "Windows Procrastinator Edition",
+        "cena": 13.37
+    }
+}
