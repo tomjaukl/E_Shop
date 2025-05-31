@@ -42,3 +42,11 @@ function zobrazKosik() {
     });
     itemsDiv.innerHTML = html;
 }
+function toggleSections(){
+    const sections = document.getElementById('sections');
+    if (sections.style.display === 'none' || sections.style.display === '') {
+        sections.style.display = 'inline';
+    } else {
+        sections.style.display = 'none';
+    }
+}
