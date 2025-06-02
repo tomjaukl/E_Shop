@@ -6,6 +6,23 @@ body{
     padding: 0;
     background: linear-gradient(to right, #C33764, #1D2671);
 }
+html, body {
+    scrollbar-width: thin;              /* Firefox */
+    scrollbar-color: #b0b0b0 #f0f0f0;   /* Firefox: thumb and track */
+}
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 6px;
+    background: #f0f0f0;
+}
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 3px;
+}
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
 nav{
     height: 2.5rem;
     display: flex;
