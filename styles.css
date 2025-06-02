@@ -10,8 +10,6 @@ html, body {
     scrollbar-width: thin;              /* Firefox */
     scrollbar-color: #b0b0b0 #f0f0f0;   /* Firefox: thumb and track */
 }
-
-/* Chrome, Edge, Safari */
 html::-webkit-scrollbar, body::-webkit-scrollbar {
     width: 6px;
     background: #f0f0f0;
@@ -122,6 +120,9 @@ h3{
 .product button:hover{
     transform: scale(1.05);
 }
+button:hover{
+    cursor: pointer;
+}
 footer{
     height: 3rem;
     background-color: aquamarine;
@@ -141,7 +142,10 @@ footer p{
     border-bottom: 1px solid lightgray;
 }
 .item h3{
-    width: 25rem;
+    width: 20rem;
+}
+.item p{
+    margin-left: 1rem;
 }
 .notification {
     position: fixed;
