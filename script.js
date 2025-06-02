@@ -24,10 +24,14 @@ function notification(message) {
 }
 function zobrazKosik() {
     const itemsDiv = document.getElementById('yourItems');
-    let cart = JSON.parse(localStorage.getItem('kosik')) ;
+    let cart = JSON.parse(localStorage.getItem('kosik')) || [];
     itemsDiv.innerHTML = ""; 
     if (cart.length === 0) {
-        itemsDiv.innerHTML = "<p>Košík je prázdný.</p>";
+        console.log("Košík je prázdný.");
+        const emptyMessage = document.createElement('h1');
+        emptyMessage.textContent = "Košík je prázdný ;(";
+        itemsDiv.appendChild(emptyMessage);
+        emptyMessage.style.textAlign = 'center';
         return;
     }
     cart.forEach(item => {
